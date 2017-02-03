@@ -4,7 +4,6 @@ import logo from './logo.svg';
 import {TodoForm, TodoList, Footer} from './components/todo';
 import {addTodo, generateId, findById, toggleTodo, updateTodo, removeTodo} from './lib/todoHelpers';
 import {pipe, partial} from './lib/utils';
-import {Link} from './components/router';
 
 class App extends Component {
   state = {
