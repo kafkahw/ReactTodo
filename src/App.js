@@ -1,9 +1,10 @@
+import './App.css';
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
-import {TodoForm, TodoList} from './components/todo';
+import {TodoForm, TodoList, Footer} from './components/todo';
 import {addTodo, generateId, findById, toggleTodo, updateTodo, removeTodo} from './lib/todoHelpers';
 import {pipe, partial} from './lib/utils';
+import {Link} from './components/router';
 
 class App extends Component {
   state = {
@@ -80,6 +81,7 @@ class App extends Component {
             handleRemove={this.handleRemove}
             todos={this.state.todos}/>
         </div>
+        <Footer />
       </div>
     );
   }
